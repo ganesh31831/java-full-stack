@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootswatch/4.5.2/cosmo/bootstrap.min.css" />
+    <script src= "https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" ></script>
+</head>
+<body>
+<div align="center">
+    <h1>Create New Course</h1>
+    <br />
+     <div class="col-sm-4">
+    <form action="#" th:action="@{/Course}" th:object="${course}" method="post">
+ 
+      
+<div alight="left">
+            <tr>
+                <label class="form-label" >Course Name</label>
+                <td>
+                <input type="hidden" th:field="*{id}" />
+                <input type="text" th:field="*{coursename}" class="form-control" placeholder="Course Name" />
+                </td>
+            </tr>
+         </div>  
+        
+        
+          <div alight="left">
+            <tr>
+                <label class="form-label" >Duration</label>
+                
+                <td>
+                 <input type="text" th:field="*{duration}" class="form-control" placeholder="Duration" />
+                </td>
+            </tr>
+         </div>  
+ 
+<br>
+            <tr>
+            <td colspan="2"><button type="submit" class="btn btn-info">Save</button> </td>
+            </tr>
+ 
+    </form>
+</div>
+</body>
+</html>

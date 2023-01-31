@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgb(255, 128, 192);
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: rgb(55, 128, 128);
+}
+
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: DarkSalmon;
+  color: white;
+
+</style>
+</head>
+<body>
+
+<div class="topnav">
+  <a class="active" href="feed">Forms</a>
+  <a th:href="@{/Course}">Course</a>
+  <a th:href="@{/addcourse}">AddCourse</a>
+  <a th:href="@{/home1}">Checkout</a>
+  
+</div>
+<img src="../templates/1.png" />
+<div style=" padding-left:16px";>
+  <marquee style= font-size:60px>WELCOME TO UNIVERSITY ADMISSION </marquee>
+
+  <p style = font-size:30px>About University..</p>
+</div>
+
+<head></head>
+<div style="width: 100%;">
+        <div style="width: 50%; height: 100px; float: left;"> 
+            <h1>Academics</h1>
+University revels fosters amicable
+learning environment.
+<h3>International Admissions</h3>
+The Office of International Relations at 
+ University iscommitted to improving the
+  academic image, educational standards..,
+ 
+  <h4> Incubation Center</h4>
+Innovation requires nothing short of a paradigm
+ shift in the established ways of thinking.
+  The zeal to explore and dare to break the
+  boundaries is encouraged among students
+        </div>
+        <div style="margin-left: 50%; height: 100px; "> 
+         <h2>Industrial Practice School</h2>
+As a part of the curriculum, University introduced an
+ innovative concept of Practice School.  
+ <h5>Hobby Clubs</h5>
+Students get plenty of opportunities to explore & discover their talents & interests ... 
+        </div>
+    </div>
+
+    
+</body>
+
+</html>
